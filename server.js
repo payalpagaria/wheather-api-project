@@ -19,7 +19,7 @@ app.post("/",(req,res)=>{
             const icon=wheatherdata.weather[0].icon;
             const image="https://openweathermap.org/img/wn/"+icon+"@2x.png"
             res.setHeader("Content-Type", "text/html")
-            res.write("<h1>"+temp+"</h1>");
+            res.write("<h1>"+"Wheather in "+query+" is "+temp+"</h1>");
             res.write("<img src=https://openweathermap.org/img/wn/"+icon+"@2x.png>");
             res.send();
 
